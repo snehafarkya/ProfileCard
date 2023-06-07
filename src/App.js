@@ -29,8 +29,8 @@ function App() {
               Your reaction:   
               {/* rating */}
               <ul class="flex justify-center">
-  <li>
-    <svg
+              <li>
+                <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
