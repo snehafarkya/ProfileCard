@@ -89,8 +89,8 @@ function App() {
           </ul>
           <hr className='opacity-50'/>
         <div className='m-2 mt-4 text-left flex gap-4'>
-          <button className='bg-white text-pink-900 p-2 rounded-sm hover:bg-transparent font-bold  border-1 border-white border hover:text-white'>View More</button>
-          <button className='bg-transparent border-1 border-white border text-white p-2 font-bold  rounded-sm hover:bg-white hover:text-pink-900'>Sign Out</button>
+          <button className='bg-white text-pink-900 p-2 rounded-sm hover:bg-transparent font-semibold  border-1 border-white border hover:text-white'>View More</button>
+          <button className='bg-transparent border-1 border-white border text-white p-2 font-semibold  rounded-sm hover:bg-white hover:text-pink-900'>Sign Out</button>
         </div>
         </div>
       </div>
