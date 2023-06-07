@@ -12,21 +12,23 @@ function App() {
             Profile card
             <img src="https://pbs.twimg.com/media/Fxmjj6gWcAEmOaP.jpg" alt="image here" className='bg-gray-200 h-20 w-20 rounded-full ' />
           </h2>
-          <h4 className='name my-2'> Sneha Farkya</h4>
+          <h3 className='name my-2 font-semibold '> Sneha Farkya</h3>
 
           <hr className='opacity-50'/>
-          <ul className='mb-4  text-left  '>
-            <li className='pb-2 pt-2 px-2 mt-1  hover:bg-gray-100 hover:text-pink-900 '>
+          <ul className='mb-1  text-left  '>
+            <li className='pb-2 pt-2 px-2 mt-1 text-sm font-medium  hover:bg-gray-100 hover:text-pink-900 '>
               About
             </li>
-            <li className='py-2 mt-1 px-2   hover:bg-gray-100 hover:text-pink-900 '>
+            <li className='py-2 mt-1 px-2 text-sm font-medium  hover:bg-gray-100 hover:text-pink-900 '>
               Orders
             </li>
-            <li className='py-2 mt-1 px-2  hover:bg-gray-100 hover:text-pink-900'>
+            <li className='py-2 mt-1 px-2 text-sm font-medium  hover:bg-gray-100 hover:text-pink-900'>
               Projects
             </li>
-            <li className='py-2 mt-1 px-2 flex items-center gap-2 hover:bg-gray-100 hover:text-pink-900' id='rate'>
-              Your reaction:   <ul class="flex justify-center">
+            <li className='py-2 mt-1 px-2 text-sm font-medium flex items-center gap-2 hover:bg-gray-100 hover:text-pink-900' id='rate'>
+              Your reaction:   
+              {/* rating */}
+              <ul class="flex justify-center">
   <li>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -87,8 +89,8 @@ function App() {
           </ul>
           <hr className='opacity-50'/>
         <div className='m-2 mt-4 text-left flex gap-4'>
-          <button className='bg-white text-pink-900 p-2 rounded-sm hover:bg-transparent border-1 border-white border hover:text-white'>View More</button>
-          <button className='bg-transparent border-1 border-white border text-white p-2 rounded-sm hover:bg-white hover:text-pink-900'>Sign Out</button>
+          <button className='bg-white text-pink-900 p-2 rounded-sm hover:bg-transparent font-bold  border-1 border-white border hover:text-white'>View More</button>
+          <button className='bg-transparent border-1 border-white border text-white p-2 font-bold  rounded-sm hover:bg-white hover:text-pink-900'>Sign Out</button>
         </div>
         </div>
       </div>
