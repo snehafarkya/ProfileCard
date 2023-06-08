@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import closeSound from './close.mp3';
 import './App.css';
 
 function App() {
@@ -12,10 +12,12 @@ function App() {
 
 
   }
+  
   const closee =() =>{
     document.getElementById("profile").style.display = "none";
     document.getElementById("cont").style.filter= "blur(0px)";
-
+    const audio = document.getElementsByClassName("audio-element")[0]
+    audio.play()
   }
   return (
     <div className="div focus:bg-gray-100 focus:opacity-2 h-screen " >
@@ -109,7 +111,10 @@ function App() {
           <hr className='opacity-50'/>
         <div className='m-2 mt-4 text-left flex gap-4'>
           <button className='bg-white text-pink-900 p-2 rounded-sm hover:bg-transparent font-semibold  border-1 border-white border hover:text-white'>Sign Out</button>
-          <button className='bg-transparent border-1 border-white border text-white p-2 font-semibold  rounded-sm hover:bg-white hover:text-pink-900 underline'  onClick={closee}>Close</button>
+          <button className='bg-transparent border-1 border-white border text-white p-2 font-semibold  rounded-sm hover:bg-white hover:text-pink-900 underline' id='close' onClick={closee}>Close</button>
+          <audio className="audio-element">
+          <source src={closeSound}></source>
+        </audio>
         </div>
         </div>
       </div>
