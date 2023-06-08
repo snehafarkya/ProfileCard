@@ -2,11 +2,26 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const openCard =() =>{
+    document.getElementById("profile").style.display = "block";
+    document.getElementById("profile").style.zIndex='2';
+    document.getElementById("cont").style.filter= "blur(3px)";
+    ;
+    // document.getElementById("cont").style.opacity="20";
+    //  document.getElementById("cont").style.backdropFilter = "blur(5px)";
+
+
+
+  }
   return (
-    <div className=" flex justify-center mt-36 items-center m-auto">
+    <div className="div focus:bg-gray-100 focus:opacity-2 h-screen " >
+            <img src="https://pbs.twimg.com/media/Fxmjj6gWcAEmOaP.jpg" alt="image here" id='cont'  onClick={openCard} className='pro bg-gray-200 h-20 w-20 rounded-full absolute top-10 right-10 ' />
+
+    <div className=" flex justify-center mt-36 items-center m-auto" >
+      
      {/* profile card */}
-     <div className=" flex justify-center  items-center text-center m-auto ">
-      <div className="card bg-[#2b0808] h-max  p-4 pb-2 w-80 text-white  rounded-md shadow-xl ">
+     <div className="contain flex justify-center  items-center text-center m-auto ">
+      <div className="card bg-[#2b0808] h-max  p-4 pb-2 w-80 text-white hidden  rounded-md shadow-xl " id='profile'>
         <div className="card-body">
           <h2 className="card-title text-center flex justify-center items-center gap-4 flex-col uppercase font-bold text-xl">
             Profile card
@@ -96,6 +111,8 @@ function App() {
       </div>
      </div>
     </div>
+    </div>
+
   );
 }
 

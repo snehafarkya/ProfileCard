@@ -2,5 +2,16 @@
   text-align: center;
 }
 
+html{
+  background-color: white;
+  opacity: 20;
+  backdrop-filter: blur(10px);
+}
 
-
+.contain:hover{
+  transition: all ease 1s;
+  transform: scale(1.18);
+}
+.contain{
+  transition: transform 1.2s ease-in-out;
+}
