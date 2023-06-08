@@ -6,11 +6,14 @@ function App() {
     document.getElementById("profile").style.display = "block";
     document.getElementById("profile").style.zIndex='2';
     document.getElementById("cont").style.filter= "blur(3px)";
-    ;
     // document.getElementById("cont").style.opacity="20";
     //  document.getElementById("cont").style.backdropFilter = "blur(5px)";
 
 
+  }
+  const closee =() =>{
+    document.getElementById("profile").style.display = "none";
+    document.getElementById("cont").style.filter= "blur(0px)";
 
   }
   return (
@@ -24,7 +27,7 @@ function App() {
       <div className="card bg-[#2b0808] h-max  p-4 pb-2 w-80 text-white hidden  rounded-md shadow-xl " id='profile'>
         <div className="card-body">
           <h2 className="card-title text-center flex justify-center items-center gap-4 flex-col uppercase font-bold text-xl">
-            Profile card
+            Profile Crad
             <img src="https://pbs.twimg.com/media/Fxmjj6gWcAEmOaP.jpg" alt="image here" className='bg-gray-200 h-20 w-20 rounded-full ' />
           </h2>
           <h3 className='name my-2 font-semibold '> Sneha Farkya</h3>
@@ -104,8 +107,8 @@ function App() {
           </ul>
           <hr className='opacity-50'/>
         <div className='m-2 mt-4 text-left flex gap-4'>
-          <button className='bg-white text-pink-900 p-2 rounded-sm hover:bg-transparent font-semibold  border-1 border-white border hover:text-white'>View More</button>
-          <button className='bg-transparent border-1 border-white border text-white p-2 font-semibold  rounded-sm hover:bg-white hover:text-pink-900'>Sign Out</button>
+          <button className='bg-white text-pink-900 p-2 rounded-sm hover:bg-transparent font-semibold  border-1 border-white border hover:text-white'>Sign Out</button>
+          <button className='bg-transparent border-1 border-white border text-white p-2 font-semibold  rounded-sm hover:bg-white hover:text-pink-900 underline'  onClick={closee}>Close</button>
         </div>
         </div>
       </div>
