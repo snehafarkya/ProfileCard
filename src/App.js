@@ -6,8 +6,9 @@ function App() {
     document.getElementById("profile").style.display = "block";
     document.getElementById("profile").style.zIndex='2';
     document.getElementById("cont").style.filter= "blur(3px)";
-    // document.getElementById("cont").style.opacity="20";
-    //  document.getElementById("cont").style.backdropFilter = "blur(5px)";
+    document.getElementById("cont").style.transform = "scale(1.05)";
+    document.getElementById("cont").style.transition = "all ease 0.3s";
+    
 
 
   }
@@ -18,7 +19,7 @@ function App() {
   }
   return (
     <div className="div focus:bg-gray-100 focus:opacity-2 h-screen " >
-            <img src="https://pbs.twimg.com/media/Fxmjj6gWcAEmOaP.jpg" alt="image here" id='cont'  onClick={openCard} className='pro bg-gray-200 h-20 w-20 rounded-full absolute top-10 right-10 ' />
+            <img src="https://pbs.twimg.com/media/Fxmjj6gWcAEmOaP.jpg" alt="image here" id='cont'  onClick={openCard} className='pro bg-gray-200 h-12 w-12 rounded-full absolute top-10 right-10 ' />
 
     <div className=" flex justify-center mt-36 items-center m-auto" >
       
