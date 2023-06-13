@@ -30,7 +30,7 @@ function App() {
       <div className="card bg-[#2b0808] h-max  p-4 pb-2 w-80 text-white hidden  rounded-md shadow-xl " id='profile'>
         <div className="card-body">
           <h2 className="card-title text-center flex justify-center items-center gap-4 flex-col uppercase font-bold text-xl">
-            Profile Crad
+            Profile Card
             <img src="https://pbs.twimg.com/media/Fxmjj6gWcAEmOaP.jpg" alt="image here" className='bg-gray-200 h-20 w-20 rounded-full ' />
           </h2>
           <h3 className='name my-2 font-semibold '> Sneha Farkya</h3>
