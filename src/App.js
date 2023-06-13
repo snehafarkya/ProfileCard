@@ -6,7 +6,7 @@ function App() {
     document.getElementById("profile").style.display = "block";
     document.getElementById("profile").style.zIndex='2';
     document.getElementById("cont").style.filter= "blur(3px)";
-    document.getElementById("cont").style.transform = "scale(1.05)";
+    document.getElementById("cont").style.transform = "scale(1)";
     document.getElementById("cont").style.transition = "all ease 0.3s";
     
 
